@@ -12,8 +12,8 @@ Feature: Alertas de bajo rendimiento académico
 
     Examples:
       | curso                | estudiante   | promedio | estado         | color_alerta |
-      | "Diseño de Software" | "Juan Pérez" | 10.5     | "Riesgo Alto"  | "rojo"       |
-      | "Diseño de Software" | "Ana Gómez"  | 12.5     | "Riesgo Medio" | "amarillo"   |
+      | "Matemática" | "Juan Pérez" | 10.5     | "Riesgo Alto"  | "rojo"       |
+      | "Matemática" | "Ana Gómez"  | 12.5     | "Riesgo Medio" | "amarillo"   |
 
   Scenario Outline: Escenario 2: Estudiante con rendimiento óptimo sin alertas (Escenario Alternativo)
     Given GIVEN que el docente visualiza la lista de estudiantes del curso <curso>
@@ -23,8 +23,8 @@ Feature: Alertas de bajo rendimiento académico
 
     Examples:
       | curso                | estudiante     | promedio | estado         |
-      | "Diseño de Software" | "Carlos Ruiz"  | 17.5     | "Riesgo Bajo"  |
-      | "Diseño de Software" | "María Torres" | 20.0     | "Riesgo Bajo"  |
+      | "Matemática" | "Carlos Ruiz"  | 17.5     | "Riesgo Bajo"  |
+      | "Matemática" | "María Torres" | 20.0     | "Riesgo Bajo"  |
 
   Scenario Outline: Escenario 3: Cambio dinámico de alerta tras actualización de nota (Escenario de Recálculo)
     Given GIVEN que el docente visualiza la lista de estudiantes del curso <curso>
@@ -35,7 +35,7 @@ Feature: Alertas de bajo rendimiento académico
 
     Examples:
       | curso                | estudiante   | promedio_antiguo | promedio_nuevo | color_alerta_nueva |
-      | "Diseño de Software" | "Juan Pérez" | 10.5             | 14.2           | "verde"            |
+      | "Matemática" | "Juan Pérez" | 10.5             | 14.2           | "verde"            |
 
   Scenario: Escenario 4: Consulta de lista sin estudiantes registrados (Escenario Excepcional)
     Given GIVEN que el docente visualiza la lista de estudiantes de un curso nuevo
