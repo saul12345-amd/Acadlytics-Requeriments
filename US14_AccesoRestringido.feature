@@ -4,8 +4,8 @@ Feature: Acceso restringido a calificaciones
   protegidos mediante roles de usuario, para garantizar la confidencialidad 
   de la información académica.
 
-  Scenario Outline: Escenario 1: Acceso exitoso por un usuario autorizado (Director).
-    Given Que existen usuarios en el sistema y el usuario actual tiene el rol de "<rol>".
+  Scenario Outline: Escenario 1:  Acceso exitoso por un usuario autorizado (Director).
+    Given Que existen usuarios en el sistema y el usuario actual tiene el rol de "<rol>" .
     When El usuario intenta acceder a la sección de calificaciones.
     Then El sistema permite el ingreso y muestra la información académica solicitada.
 
