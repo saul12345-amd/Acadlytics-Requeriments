@@ -13,8 +13,8 @@ Feature: Registro de notas de evaluaciones
 
     Examples:
       | Curso                | Evaluacion   | Nota_valor | mensaje                        |
-      | "Diseño de Software" | "Práctica 1" | 16         | "Nota guardada correctamente"  |
-      | "Diseño de Software" | "Examen"     | 14         | "Nota guardada correctamente"  |
+      | "Matemática" | "Práctica 1" | 16         | "Nota guardada correctamente"  |
+      | "Matemática" | "Examen"     | 14         | "Nota guardada correctamente"  |
 
   Scenario Outline: Escenario 2: Intento de registro con datos inválidos o vacíos (Escenario Alternativo / Validación)
     Given dado que el docente ingresa al módulo de evaluaciones
@@ -25,8 +25,8 @@ Feature: Registro de notas de evaluaciones
 
     Examples:
       | Curso                | Nota_valor |
-      | "Diseño de Software" | 25         |
-      | "Diseño de Software" | -2         |
+      | "Matemática" | 25         |
+      | "Matemática" | -2         |
 
   Scenario: Escenario 3: Cancelación del proceso de registro de notas (Escenario de Cancelación)
     Given dado que el docente ingresa al módulo de evaluaciones
