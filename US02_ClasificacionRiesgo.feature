@@ -4,6 +4,7 @@ Feature: Clasificación de riesgo académico
   Quiero que mis estudiantes estén clasificados por niveles de riesgo
   Para identificar rápidamente quiénes necesitan apoyo académico.
 
+
   Scenario: Visualización de estudiantes clasificados por riesgo
     Given que existen estudiantes con diferentes niveles de rendimiento académico
     And cada estudiante tiene asignado un nivel de riesgo
@@ -13,11 +14,13 @@ Feature: Clasificación de riesgo académico
     And los estudiantes de riesgo medio deben mostrarse en color amarillo
     And los estudiantes de riesgo bajo deben mostrarse en color verde
 
+
   Scenario Outline: Actualización automática de la clasificación de riesgo
     Given que se actualizan las calificaciones de un estudiante
     When el sistema recalcula el <nivel_riesgo>
-    Then la clasificación del estudiante debe actualizarse automáticamente
-    And el <color> asociado al nivel de riesgo debe modificarse según corresponda
+    Then la clasificación del estudiante debe actualizarse automáticamente.}
+    And el <color> asociado al nivel de riesgo debe modificarse según corresponda.
+
 
     Examples:
       | nivel_riesgo | color      |
