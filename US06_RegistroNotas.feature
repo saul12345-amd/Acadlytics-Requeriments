@@ -14,8 +14,8 @@ Feature: Registro de notas
 
     Examples:
       | Curso                | Estudiante   | Evaluacion   | Nota_valor | mensaje                      |
-      | "Diseño de Software" | "Juan Pérez" | "Tarea 1"    | 18         | "Nota registrada con éxito"  |
-      | "Diseño de Software" | "Ana Gómez"  | "Proyecto 2" | 15         | "Nota registrada con éxito"  |
+      | "Matemática" | "Juan Pérez" | "Tarea 1"    | 18         | "Nota registrada con éxito"  |
+      | "Matemática" | "Ana Gómez"  | "Proyecto 2" | 15         | "Nota registrada con éxito"  |
 
   Scenario Outline: Escenario 2: Intento de registro con una nota fuera del rango permitido (Escenario Alternativo / Error de Validación)
     Given dado que el docente se encuentra en la sección de Registro de Notas
@@ -26,5 +26,5 @@ Feature: Registro de notas
 
     Examples:
       | Curso                | Estudiante   | Evaluacion   | Nota_valor |
-      | "Diseño de Software" | "Juan Pérez" | "Tarea 1"    | -5         |
-      | "Diseño de Software" | "Ana Gómez"  | "Proyecto 2" | 25         |
+      | "Matemática" | "Juan Pérez" | "Tarea 1"    | -5         |
+      | "Matemática" | "Ana Gómez"  | "Proyecto 2" | 25         |
